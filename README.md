@@ -1,3 +1,9 @@
+## Change local and remote repo name
+
+https://docs.github.com/en/github/using-git/changing-a-remotes-url
+
+https://docs.github.com/en/github/administering-a-repository/renaming-a-repository
+
 ## How to remove file from repository history
 
 ```
@@ -43,6 +49,16 @@ git push origin master --force-with-lease
 as described here: https://stackoverflow.com/questions/10510462/force-git-push-to-overwrite-remote-files
 
 Apparently, the second option is safer when other people are contributing to the same repo, but this is not important because I am the only one working on it.
+
+## How to cache credentials so you don't have to enter password multiple times
+
+When using Git and Git LFS, it asks for your password 3 times. To fix this, cache your credentials:
+
+```
+git config lfs.cachecredentials true
+```
+
+https://github.com/git-lfs/git-lfs/issues/3318
 
 ## Miscellaneous Links
 
